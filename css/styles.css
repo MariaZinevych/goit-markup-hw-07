@@ -228,17 +228,50 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondery-title-color);
-  
+
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .tel {
-line-height: 1.5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondery-title-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .features-list-icons {
+    display: none;
+  }
+
+  .list-content {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .content-subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+
+  .content-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondery-title-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-right: 16px;
+    margin-left: 16px;
   }
 }
 
@@ -275,6 +308,14 @@ line-height: 1.5;
   .address-item {
     margin-top: 12px;
   }
+
+  .features-list-icons {
+    display: none;
+  }
+
+  .list-content { display: flex;
+  flex-direction: column;
+gap: 8px;}
 }
 
 @media screen and (min-width: 1200px) {
@@ -329,13 +370,12 @@ line-height: 1.5;
   .tel:hover,
   .tel:focus {
     color: var(--accent-color);
-  }  
-
-   .mailto {
-  margin-right: 40px;
-
-}
   }
+
+  .mailto {
+    margin-right: 40px;
+  }
+}
 
 /*--------Logo------- */
 
@@ -576,7 +616,7 @@ line-height: 1.5;
 }
 
 /* ---Section1---  */
-
+/* 
 .list-content {
   display: flex;
 }
@@ -611,7 +651,7 @@ line-height: 1.5;
   border-radius: 4px;
   gap: 24px;
   margin-bottom: 8px;
-}
+} */
 
 /* ---Section2---  */
 
