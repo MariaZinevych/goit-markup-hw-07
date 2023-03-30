@@ -2,9 +2,7 @@
   .container {
     width: 766px;
   }
-}
 
-@media screen and (min-width: 768px) {
   .mobil-menu {
     display: none;
   }
@@ -36,23 +34,6 @@
   }
   .address-item {
     margin-top: 12px;
-  }
-
-  .mailto {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--secondery-title-color);
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .tel {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--secondery-title-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* Features */

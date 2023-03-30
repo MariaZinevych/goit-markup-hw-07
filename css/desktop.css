@@ -1,4 +1,10 @@
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .address-list {
     display: flex;
     align-items: center;
@@ -40,23 +46,6 @@
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
     padding-bottom: 24px;
-  }
-
-  .mailto {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--secondery-title-color);
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .tel {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--secondery-title-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .mailto:hover,
@@ -255,4 +244,6 @@
       background-image: url("../image/peopledekstopoffice@2x.jpg");
     }
   }
+
+  /* Footer  */
 }
