@@ -247,7 +247,10 @@
   }
 
   /* Hero  */
-
+  .hero {
+    padding-bottom: 112px;
+    padding-top: 112px;
+  }
   .sec-hero {
     width: 768px;
     margin-right: auto;
@@ -298,8 +301,8 @@
 
   .footer {
     background-color: #2e2f42;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .footer-desc {
@@ -325,10 +328,6 @@
     height: 40px;
     border-radius: 50%;
     background-color: #4d5ae5;
-  }
-
-  .footer {
-    display: flex;
   }
 
   .footer-icons {

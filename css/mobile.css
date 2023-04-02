@@ -16,6 +16,10 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  .footer-form-input {
+    width: 396px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -34,7 +38,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #8e8f99;
+    background-color: #ffffff;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
@@ -60,7 +64,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e7e9fc;
+    background-color: #ffffff;
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -94,6 +98,7 @@
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: #2e2f42;
   }
 
   .menu-mobil-social {
@@ -120,6 +125,28 @@
   }
   .mobil-menu-social-link-pic {
     fill: #f4f4fd;
+  }
+  .mobil-menu-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #4d5ae5;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .mobil-menu-link-email {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
 
   /* Features */
@@ -178,11 +205,12 @@
   .customers-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
-  }
-
-  .customers-item {
-    width: calc((100% - 16px) / 3);
+    row-gap: 72px;
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 72px;
   }
 
   .customers-pic {
@@ -201,10 +229,6 @@
   }
 
   /* Team  */
-
-  /* .team-img {
-    width: 100%;
-  } */
 
   .title-team {
     font-size: 36px;
@@ -238,13 +262,12 @@
 
   .item-team {
     align-items: center;
-    flex-basis: calc ((100%-72)/4);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     background: #ffffff;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
   }
 
   .employees {
@@ -282,8 +305,9 @@
 
   .list-team {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+    padding: 0px;
     gap: 72px;
   }
 
@@ -315,6 +339,7 @@
   .fotter-flex {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -374,21 +399,21 @@
   }
 
   .footer-form-input {
+    display: flex;
+    align-items: center;
+    max-width: 362px;
+    height: 40px;
     background-color: transparent;
     border: 1px solid #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 398px;
-    max-width: 100%;
-    height: 40px;
-
     padding-top: 8px;
     padding-left: 16px;
     padding-bottom: 8px;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.6);
   }
 
   .footer-form-input::placeholder {
@@ -414,7 +439,6 @@
 
   .form-fotter-button {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
@@ -422,7 +446,6 @@
     background: #4d5ae5;
     border-radius: 4px;
     border: 0;
-    margin-left: 24px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -465,21 +488,31 @@
 
   /* Hero */
 
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 48px;
+  }
+
   .sec-hero {
+    display: flex;
+    justify-content: center;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-color: rgba(46, 47, 66, 0.7);
     margin-left: auto;
     margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 428px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../image/Darkmobilebg1x.jpg);
-    background-size: 428px 432px;
-    background-color: rgba(46, 47, 66, 0.7);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-size: cover;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
