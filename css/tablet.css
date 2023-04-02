@@ -285,7 +285,9 @@
     text-transform: uppercase;
     color: #f4f4fd;
   }
-
+  .form-fotter-desc {
+    margin-right: 24px;
+  }
   .footer-link span {
     line-height: 1.17;
     color: var(--logo-color);
@@ -308,7 +310,7 @@
   .footer-desc {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 108px;
+    justify-content: center;
   }
 
   .social-text {
