@@ -63,12 +63,6 @@ button {
   padding-bottom: 96px;
 }
 
-/* .header-top {
-  padding-top: 24px;
-  padding-bottom: 22px;
-  padding-left: 16px;
-  padding-right: 16px;
-} */
 .page-header-container {
   display: flex;
   align-items: center;

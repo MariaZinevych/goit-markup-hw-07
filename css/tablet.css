@@ -206,6 +206,12 @@
     fill: currentColor;
   }
 
+  .customers-pic:hover,
+  .customers-pic:focus {
+    color: #404bbf;
+    border: 1px solid #404bbf;
+  }
+
   /* Team  */
 
   .team-subtitle {
@@ -313,7 +319,9 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .sec-hero {
-      background-image: url("../image/Darktabletbg@2x.jpg");
+      background-image: linear-gradient
+          (to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../image/Darktabletbg@2x.jpg");
     }
   }
 
